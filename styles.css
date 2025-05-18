@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #FFF3C2 0%, #FFC8DD 100%);
+    background: linear-gradient(90deg, #FFE5C2 0%, #FFD1E3 50%, #FFD1E3 100%);
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
@@ -40,8 +40,8 @@ body {
 }
 
 .language-btn.active {
-    background: #FFC8DD;
-    border-color: #FFC8DD;
+    background: #FFE5C2;
+    border-color: #FFE5C2;
 }
 
 .language-btn:hover {
@@ -230,4 +230,12 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5rem;
+}
+
+.logo-img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem auto;
 } 

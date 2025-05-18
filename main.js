@@ -7,7 +7,11 @@ function updateLanguage(lang) {
     });
 
     // Update all translatable elements
-    document.querySelector('.names').textContent = translations[lang].names;
+    const namesElement = document.querySelector('.names textPath');
+    if (namesElement) {
+        namesElement.textContent = translations[lang].names;
+    }
+    
     document.querySelector('.save-date').textContent = translations[lang].saveDate;
     document.querySelector('.date').textContent = translations[lang].date;
     document.querySelector('.location').textContent = translations[lang].location;
