@@ -21,6 +21,13 @@ function updateLanguage(lang) {
     document.querySelector('section:nth-child(2) h2').textContent = translations[lang].venue;
     document.querySelector('section:nth-child(2) p:nth-child(2)').textContent = translations[lang].venueText;
     
+    // Update dress code section
+    const dressCodeSection = document.querySelector('section h2:nth-of-type(3)');
+    if (dressCodeSection) {
+        dressCodeSection.textContent = translations[lang].dressCode;
+        dressCodeSection.nextElementSibling.textContent = translations[lang].dressCodeText;
+    }
+    
     document.querySelector('section:nth-child(3) h2').textContent = translations[lang].accommodation;
     document.querySelector('section:nth-child(3) p:nth-child(2)').textContent = translations[lang].accommodationText;
     document.querySelector('section:nth-child(3) p:nth-child(3)').textContent = translations[lang].accommodationText2;

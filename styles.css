@@ -107,11 +107,30 @@ main {
     }
 }
 
+.section-divider {
+    margin: 2.5rem 0;
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FFC8DD, transparent);
+}
+
 section {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section h2:first-child {
+    margin-top: 0;
+}
+
+section h2:not(:first-child) {
+    margin-top: 1rem;
 }
 
 h2 {

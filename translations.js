@@ -31,7 +31,9 @@ const translations = {
         messageForCouple: "Message for the Couple (Optional)",
         sendRSVP: "Send RSVP",
         footerText: "We look forward to celebrating with you!",
-        contactEmail: "For any questions, please contact us at: samandcalin@example.com"
+        contactEmail: "For any questions, please contact us at: samandcalin@example.com",
+        dressCode: "Dress Code",
+        dressCodeText: "We kindly request our guests to dress in cocktail attire. Think elegant and festive - suits and ties for gentlemen, and cocktail dresses or elegant separates for ladies."
     },
     de: {
         names: "SAM & CALIN",
@@ -65,7 +67,9 @@ const translations = {
         messageForCouple: "Nachricht für das Paar (Optional)",
         sendRSVP: "RSVP senden",
         footerText: "Wir freuen uns darauf, mit Ihnen zu feiern!",
-        contactEmail: "Bei Fragen kontaktieren Sie uns bitte unter: samandcalin@example.com"
+        contactEmail: "Bei Fragen kontaktieren Sie uns bitte unter: samandcalin@example.com",
+        dressCode: "Dresscode",
+        dressCodeText: "Wir bitten unsere Gäste, sich in Cocktail-Kleidung zu präsentieren. Elegant und festlich - Anzüge und Krawatten für die Herren, Cocktailkleider oder elegante Kombinationen für die Damen."
     },
     ro: {
         names: "SAM & CALIN",
@@ -99,7 +103,9 @@ const translations = {
         messageForCouple: "Mesaj pentru Cuplu (Opțional)",
         sendRSVP: "Trimite RSVP",
         footerText: "Așteptăm cu nerăbdare să sărbătorim cu voi!",
-        contactEmail: "Pentru întrebări, vă rugăm să ne contactați la: samandcalin@example.com"
+        contactEmail: "Pentru întrebări, vă rugăm să ne contactați la: samandcalin@example.com",
+        dressCode: "Cod Vestimentar",
+        dressCodeText: "Vă rugăm pe invitați să poarte o ținută de cocktail. Elegant și festiv - costume și cravate pentru domni, rochii de cocktail sau ținute elegante pentru doamne."
     }
 };
 
