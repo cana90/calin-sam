@@ -199,16 +199,6 @@ p {
     position: relative;
 }
 
-.event:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 1px;
-    background-color: #FFC8DD;
-    left: -1rem;
-    top: 0;
-}
-
 .expectations-list {
     list-style: none;
     padding: 0;
