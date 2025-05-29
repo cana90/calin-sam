@@ -24,7 +24,7 @@ function updateLanguage(lang) {
     
     // Update section headings and content
     document.querySelector('section:nth-child(1) h2').textContent = translations[lang].venue;
-    document.querySelector('section:nth-child(1) p:nth-child(2)').textContent = translations[lang].venueText;
+    document.querySelector('section:nth-child(1) p:nth-child(2)').innerHTML = translations[lang].venueText;
     
     // Update event details
     const eventDetailsSection = document.querySelector('section h2:nth-of-type(2)');
@@ -90,11 +90,16 @@ function updateLanguage(lang) {
     document.querySelector('footer p:nth-child(2)').textContent = translations[lang].contactEmail;
 }
 
-// Add click event listeners to language buttons
-document.querySelectorAll('.language-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        updateLanguage(btn.dataset.lang);
+document.addEventListener('DOMContentLoaded', () => {
+    // Add click event listeners to language buttons
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            updateLanguage(btn.dataset.lang);
+        });
     });
+
+    // Update language on page load
+    updateLanguage('en');
 });
 
 // Handle form submission
@@ -102,7 +107,4 @@ document.getElementById('rsvp-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Thank you for your RSVP! We have received your response.');
     this.reset();
-});
-
-// Update language on page load
-updateLanguage('en'); 
+}); 
