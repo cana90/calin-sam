@@ -216,19 +216,23 @@ p {
 }
 
 .expectations-list li {
-    position: relative;
-    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
     margin-bottom: 0.75rem;
     font-size: 2rem;
     line-height: 1.5;
+    padding-left: 0;
+    position: static;
 }
 
 .expectations-list li:before {
     content: '♥';
-    position: absolute;
-    left: 0;
     color: #FFC8DD;
-    font-size: 1rem;
+    font-size: 2.2rem;
+    margin-right: 0.7em;
+    position: static;
+    top: auto;
+    left: auto;
 }
 
 form {
