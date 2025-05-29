@@ -102,4 +102,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Thank you for your RSVP! We have received your response.');
     this.reset();
-}); 
+});
+
+// Update language on page load
+updateLanguage('en'); 
