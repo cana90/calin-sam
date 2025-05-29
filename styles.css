@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Petit+Formal+Script&family=Montserrat:wght@300;400;500&family=Dancing+Script:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Caveat', cursive;
     background: linear-gradient(90deg, #FFE5C2 0%, #FFD1E3 50%, #FFD1E3 100%);
     min-height: 100vh;
     color: #333;
@@ -35,7 +35,8 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
     transition: all 0.3s ease;
 }
 
@@ -56,12 +57,12 @@ header {
 }
 
 .names {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
     font-size: 3rem;
     letter-spacing: 3px;
     margin-bottom: 1rem;
     transform: rotate(-2deg);
-    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -76,11 +77,12 @@ header {
 .celebration-message p,
 .date,
 .location {
-    font-family: 'Dancing Script', cursive !important;
+    font-family: 'Caveat', cursive;
     color: #333;
 }
 
 .save-date {
+    font-weight: 600;
     font-size: 3.2rem;
     margin-bottom: 1.5rem;
 }
@@ -92,24 +94,25 @@ header {
 }
 
 .celebration-message p {
+    font-weight: 500;
     font-size: 2rem;
     line-height: 1.4;
-    font-weight: 400;
+    color: #333;
     margin: 0;
 }
 
 .date {
+    font-weight: 600;
     font-size: 2.8rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
-    font-weight: 400;
 }
 
 .location {
+    font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: 0.2em;
     margin-bottom: 0;
-    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -142,10 +145,13 @@ section h2:first-child {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
+    color: #333;
 }
 
 h2:after {
@@ -156,6 +162,12 @@ h2:after {
     background: linear-gradient(90deg, #FFC8DD, transparent);
     bottom: -5px;
     left: 0;
+}
+
+section p,
+section li {
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 p {
@@ -171,6 +183,11 @@ p {
     grid-template-columns: auto 1fr;
     gap: 1rem 2rem;
     margin-bottom: 1.5rem;
+}
+
+.timeline .event,
+.timeline .time {
+    font-size: 2rem;
 }
 
 .time {
@@ -202,7 +219,8 @@ p {
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 .expectations-list li:before {
@@ -232,17 +250,19 @@ input, select, textarea {
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
 }
 
-button {
+button, .rsvp-button {
     background: linear-gradient(135deg, #FFC8DD 0%, #FFF3C2 100%);
     color: #333;
     border: none;
     padding: 0.75rem 2rem;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -250,21 +270,6 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.rsvp-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #FFC8DD 0%, #FFF3C2 100%);
-    color: #333;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
 }
 
 .rsvp-button:hover {
