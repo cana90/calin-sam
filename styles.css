@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Petit+Formal+Script&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Petit+Formal+Script&family=Montserrat:wght@300;400;500&family=Dancing+Script:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -72,27 +72,45 @@ header {
     display: inline-block;
 }
 
+.save-date,
+.celebration-message p,
+.date,
+.location {
+    font-family: 'Dancing Script', cursive !important;
+    color: #333;
+}
+
 .save-date {
-    font-family: 'Petit Formal Script', cursive;
     font-size: 3.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.celebration-message {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.celebration-message p {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0;
 }
 
 .date {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
-    letter-spacing: 5px;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .location {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 0;
+    font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    font-weight: 300;
 }
 
 main {
@@ -107,13 +125,6 @@ main {
     }
 }
 
-.section-divider {
-    margin: 2.5rem 0;
-    border: none;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #FFC8DD, transparent);
-}
-
 section {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2.5rem;
@@ -122,20 +133,16 @@ section {
 }
 
 section h2 {
-    margin-top: 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 section h2:first-child {
     margin-top: 0;
 }
 
-section h2:not(:first-child) {
-    margin-top: 1rem;
-}
-
 h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 1.5rem;
     font-size: 1.8rem;
     position: relative;
     display: inline-block;
@@ -185,6 +192,27 @@ p {
     top: 0;
 }
 
+.expectations-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.expectations-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.expectations-list li:before {
+    content: '♥';
+    position: absolute;
+    left: 0;
+    color: #FFC8DD;
+    font-size: 1rem;
+}
+
 form {
     margin-top: 1.5rem;
 }
@@ -222,6 +250,28 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFC8DD 0%, #FFF3C2 100%);
+    color: #333;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.rsvp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
 }
 
 footer {
