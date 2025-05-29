@@ -72,6 +72,16 @@ function updateLanguage(lang) {
     document.querySelector('section:nth-child(2) h2').textContent = translations[lang].rsvp;
     document.querySelector('section:nth-child(2) p').textContent = translations[lang].rsvpText;
     document.querySelector('.rsvp-button').textContent = translations[lang].rsvpButton;
+
+    // Update RSVP button link based on language
+    const rsvpButton = document.querySelector('.rsvp-button');
+    if (rsvpButton) {
+        if (lang === 'ro') {
+            rsvpButton.href = 'https://forms.gle/v9ChUUWyrWPh6Jir6';
+        } else {
+            rsvpButton.href = 'https://forms.gle/si1LyRtonz7gZkdKA';
+        }
+    }
     
     // Update form labels
     document.querySelector('label[for="name"]').textContent = translations[lang].fullName;

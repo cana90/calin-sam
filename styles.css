@@ -86,6 +86,7 @@ header {
     font-weight: 600;
     font-size: 3.2rem;
     margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .celebration-message {
@@ -309,9 +310,9 @@ footer {
 }
 
 .logo-img {
-    max-width: 832px;
+    max-width: 320px;
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 0.5rem auto;
+    margin: 0 auto 1.5rem auto;
 } 
