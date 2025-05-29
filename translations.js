@@ -36,7 +36,7 @@ const translations = {
         guestArrival: "Recepția invitaților cu cocktail-uri",
         dinnerBegins: "Cina și distracție",
         venue: "Locație",
-        venueText: "<a href=\"https://maps.app.goo.gl/rMbqB2nboh145hkp8\" target=\"_blank\">Locația</a> se află lângă frumosul Lac Valiug, înconjurată de spectaculoasele Munți Semenic.",
+        venueText: "<a href=\"https://maps.app.goo.gl/rMbqB2nboh145hkp8\" target=\"_blank\">Locația</a> este langa lacul Valiug, înconjurată de Munții Semenic.",
         dressCode: "Cod Vestimentar",
         dressCodeText: "Casual – veniți așa cum sunteți! Costumele și cravatele sunt opționale, purtați ce vă face să vă simțiți bine. Nu uitați pantofii de dans, pentru că vom dansa toată noaptea!",
         whatToExpect: "La ce sa te astepti?",
